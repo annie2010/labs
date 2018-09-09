@@ -3,20 +3,23 @@
 package fizzbuzz_test
 
 import (
+	"fmt"
 	"testing"
 
 	"github.com/gopherland/labs/documentation/fizzbuzz"
 	"github.com/stretchr/testify/assert"
 )
 
+var Output string
+
 func TestCompute(t *testing.T) {
 	uu := map[int]string{
-		0:  "FizzBuzz",
+		0:  fizzbuzz.DivBy3And5,
 		1:  "1",
-		3:  "Fizz",
+		3:  fizzbuzz.DivBy3,
 		4:  "4",
-		5:  "Buzz",
-		15: "FizzBuzz",
+		5:  fizzbuzz.DivBy5,
+		15: fizzbuzz.DivBy3And5,
 	}
 
 	for k, v := range uu {
@@ -24,17 +27,31 @@ func TestCompute(t *testing.T) {
 	}
 }
 
-// YOUR_CODE
+func BenchmarkCompute(b *testing.B) {
+	var out string
+	for i := 0; i < b.N; i++ {
+		out = fizzbuzz.Compute(i)
+	}
+	Output = out
+}
+
+// Returns `FizzBuzz if number is div by 3 and 5
 func ExampleCompute_DivisibleBy3And5() {
-	// YOUR_CODE
+	fmt.Println(fizzbuzz.Compute(15))
+	// Output:
+	// FizzBuzz
 }
 
-// YOUR_CODE
+// Returns `Fizz if number is div by 3
 func ExampleCompute_DivisibleBy3() {
-	// YOUR_CODE
+	fmt.Println(fizzbuzz.Compute(3))
+	// Output:
+	// Fizz
 }
 
-// YOUR_CODE
+// Returns `Buzz if number is div by 5
 func ExampleCompute_DivisibleBy5() {
-	// YOUR_CODE
+	fmt.Println(fizzbuzz.Compute(5))
+	// Output:
+	// Buzz
 }

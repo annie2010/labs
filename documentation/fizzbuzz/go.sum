@@ -1,6 +1,8 @@
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/gopherland/labs v0.0.0-20180901193526-0ec06ab301fa h1:0cXSOOWvUGMrXRYvof10dRQaWS2E4j60GIAoKa41UtI=
+github.com/imhotepio/letsgo_labs/documentation/fizzbuzz v0.0.0-20180903005212-82139415d12e h1:VvVpoRQf3FJcKRlR93YjHGWJt8NAnfhmI4UCabWglE0=
+github.com/imhotepio/letsgo_labs/documentation/fizzbuzz v0.0.0-20180903005212-82139415d12e/go.mod h1:Yx3Jw4fCKuIDJMK4Q09uzaQMWqaudVj6WNWZ14v1vGQ=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/stretchr/testify v1.2.2 h1:bSDNvY7ZPG5RlJ8otE/7V6gMiyenm9RtJ7IUVIAoJ1w=
