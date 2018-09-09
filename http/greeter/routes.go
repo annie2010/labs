@@ -12,8 +12,7 @@ type Response struct {
 
 // SetupRoutes for various endpoints.
 func SetupRoutes() {
-	http.HandleFunc("/greet", GreetingHandler)
-	http.HandleFunc("/", NoMatchHandler)
+	// YOUR CODE ...
 }
 
 // GreetingHandler greats incoming users.
