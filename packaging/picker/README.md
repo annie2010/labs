@@ -8,7 +8,7 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/YOUR_GIT_HANDLE/picker)](https://goreportcard.com/report/github.com/YOUR_GIT_HANDLE/picker)
 [![GoDoc](https://godoc.org/github.com/YOUR_GIT_HANDLE/picker?status.svg)](http://godoc.org/github.com/YOUR_GIT_HANDLE/picker)
 
-# LetsGo! Package Dictionary Lab
+# Package Lab
 
 ---
 ## <img src="assets/lab.png" width="auto" height="32"/> Mission

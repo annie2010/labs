@@ -4,7 +4,7 @@
 <br/>
 <br/>
 
-# LetsGo! Errors FizzBuzz Lab...
+# Errors Lab...
 
 ## Mission
 

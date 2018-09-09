@@ -4,7 +4,7 @@
 <br/>
 <br/>
 
-# LetsGo! FizzBuzz Documentation Lab...
+# Documentation Lab...
 
 ## <img src="../../assets/lab.png" width="auto" height="32"/> Mission
 

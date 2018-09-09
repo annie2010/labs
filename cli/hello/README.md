@@ -4,7 +4,7 @@
 <br/>
 <br/>
 
-# LetsGo! CLI Flags Lab
+# CLI Flags Lab
 
 ---
 ## <img src="../../assets/lab.png" width="auto" height="32"/> Mission

@@ -4,7 +4,7 @@
 <br/>
 <br/>
 
-# LetsGo! Dictionary Service Lab
+# WebService Lab
 
 ---
 ## <img src="../../assets/lab.png" width="auto" height="32"/> Mission

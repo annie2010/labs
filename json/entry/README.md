@@ -4,7 +4,7 @@
 <br/>
 <br/>
 
-# LetsGo! JSON Dictionary Word Lab...
+# JSON Lab...
 
 ---
 ## <img src="../../assets/lab.png" width="auto" height="32"/> Mission
