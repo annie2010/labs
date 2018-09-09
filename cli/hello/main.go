@@ -1,6 +1,7 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 )
 
@@ -9,7 +10,9 @@ func greet(name string, age int) string {
 }
 
 func main() {
-	// YOUR_CODE...
+	u := flag.String("u", "No One", "Specify a user name")
+	a := flag.Int("a", 42, "Specify a user age")
+	flag.Parse()
 
-	fmt.Println(greet("Blee", 10))
+	fmt.Println(greet(*u, *a))
 }
