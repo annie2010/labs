@@ -4,9 +4,9 @@
 <br/>
 <br/>
 
-# LetsGo! Labs
+# GopherLand! Labs
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/imhotepio/letsgo_labs)](https://goreportcard.com/report/github.com/imhotepio/letsgo_labs)
+[![Go Report Card](https://goreportcard.com/badge/github.com/gopherland/labs)](https://goreportcard.com/report/github.com/gopherland/labs)
 
 
 This repository contains lab solutions for the LetsGo! class materials.
