@@ -1,6 +1,7 @@
 module github.com/gopherland/labs/documentation/fizzbuzz
 
 require (
-	github.com/imhotepio/letsgo_labs/documentation/fizzbuzz v0.0.0-20180903005212-82139415d12e
+	github.com/davecgh/go-spew v1.1.1 // indirect
+	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/stretchr/testify v1.2.2
 )
