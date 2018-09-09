@@ -3,7 +3,7 @@ package picker_test
 import (
 	"testing"
 
-	"github.com/YOUR_GIT_HANDLE/picker"
+	"github.com/derailed/picker"
 	"github.com/stretchr/testify/assert"
 )
 

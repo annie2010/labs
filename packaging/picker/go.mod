@@ -1,4 +1,4 @@
-module github.com/YOUR_GIT_HANDLE/picker
+module github.com/derailed/picker
 
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
