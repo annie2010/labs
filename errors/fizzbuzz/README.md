@@ -10,7 +10,8 @@
 
 > Enhance your FizzBuzz game with errors
 
-* In your go workspace letsgo_labs, cd to the errors lab
+* Clone github.com/gopherland/labs
+* Cd to the errors lab
 * Leverage [Dave Cheney's errors package](https://github.com/pkg/errors) and
   issue a game error when the number is out of range
 * Write a program that iterates from 0 to 21 included

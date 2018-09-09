@@ -28,7 +28,7 @@
 
 ```shell
 # Navigate to your own Go workspace
-$ cd $HOME/letsgo
+$ cd $HOME/gopherland
 # Clone Labs Repo if not done already
 $ git clone https://github.com/gopherland/labs.git
 # Lab dir

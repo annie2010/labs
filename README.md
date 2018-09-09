@@ -9,7 +9,7 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/gopherland/labs)](https://goreportcard.com/report/github.com/gopherland/labs)
 
 
-This repository contains lab solutions for the LetsGo! class materials.
+This repository contains lab solutions for the GopherLand! class materials.
 
 
 ---
