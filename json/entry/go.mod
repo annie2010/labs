@@ -1,1 +1,1 @@
-module github.com/imhotepio/letsgo_labs/json/entry
+module github.com/gopherland/labs/json/entry

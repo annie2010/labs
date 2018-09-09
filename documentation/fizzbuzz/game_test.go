@@ -5,7 +5,7 @@ package fizzbuzz_test
 import (
 	"testing"
 
-	"github.com/imhotepio/letsgo_labs/documentation/fizzbuzz"
+	"github.com/gopherland/labs/documentation/fizzbuzz"
 	"github.com/stretchr/testify/assert"
 )
 

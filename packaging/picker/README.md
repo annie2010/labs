@@ -16,7 +16,7 @@
 > Package deal! Implement a picker package to pick a word from a given word dictionary
 
 * The picker package loads words from the given assets directory and randomly pick a new word
-* Copy letsgo_labs/packaging/picker to your $HOME/letsgo/picker
+* Copy gopherland/labs/packaging/picker to your $HOME/gopherland/picker
 * Create a new module file using the following command:
   ```shell
   go mod init github.com/YOUR_GIT_USER_HANDLE/picker

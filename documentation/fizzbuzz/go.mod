@@ -1,4 +1,4 @@
-module github.com/imhotepio/letsgo_labs/documentation/fizzbuzz
+module github.com/gopherland/labs/documentation/fizzbuzz
 
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect

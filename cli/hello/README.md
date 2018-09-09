@@ -15,7 +15,7 @@
 
 * Clone the Git repository from the template link into your Go workspace (Skip if already cloned!)
   * For Example: cd $GOPATH/src/github.com/YOUR_GIT_USERNAME
-  * git clone https://github.com/imhotepio/letsgo_labs.git
+  * git clone https://github.com/gopherland/labs.git
 * cd cli/hello
 * Edit the file *main.go* and add your code
   * Note: Default user: *No one*
@@ -30,7 +30,7 @@
 # Navigate to your own Go workspace
 $ cd $HOME/letsgo
 # Clone Labs Repo if not done already
-$ git clone https://github.com/imhotepio/letsgo_labs.git
+$ git clone https://github.com/gopherland/labs.git
 # Lab dir
 cd cli
 # Get cracking!!

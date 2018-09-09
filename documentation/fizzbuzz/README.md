@@ -13,7 +13,6 @@
 
 ### Hints
 
-* Clone this repo github.com/imhotepio/letsgo_labs
 * In the directory documentation/fizzbuzz
   * Change the module file to reflect your own github user
   * For example: github.com/MY_GITHUB_HANDLE/fizzbuzz

@@ -9,7 +9,7 @@ import (
 	"net/url"
 	"strconv"
 
-	"github.com/imhotepio/letsgo_labs/http/greeter"
+	"github.com/gopherland/labs/http/greeter"
 )
 
 func main() {

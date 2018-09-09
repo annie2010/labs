@@ -1,1 +1,1 @@
-module github.com/imhotepio/letsgo_labs/cli/hello
+module github.com/gopherland/labs/cli/hello

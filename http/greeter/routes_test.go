@@ -6,7 +6,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/imhotepio/letsgo_labs/http/greeter"
+	"github.com/gopherland/labs/http/greeter"
 	"github.com/stretchr/testify/assert"
 )
 

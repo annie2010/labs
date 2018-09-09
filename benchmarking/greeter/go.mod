@@ -1,4 +1,4 @@
-module github.com/imhotepio/letsgo_labs/benchmarking/greeter
+module github.com/gopherland/labs/benchmarking/greeter
 
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect

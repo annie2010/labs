@@ -1,4 +1,4 @@
-module github.com/imhotepio/letsgo_labs/http/greeter
+module github.com/gopherland/labs/http/greeter
 
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
