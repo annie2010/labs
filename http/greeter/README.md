@@ -44,11 +44,13 @@ brew install httpie
 
 ```shell
 # Start your web server
-go run main.go
+go run cmd/srv/main.go
 # Hit the new_word url classic
 curl -XGET 'http://localhost:4500/greet?name=Fernand&age=42'
 # Or...
 http :4500/greet name==Fernand age==42
+# Run the cli
+go run cmd/cli/main.go -age 10 -name fred -url localhost:4500
 ```
 
 ---
