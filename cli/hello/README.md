@@ -48,6 +48,10 @@ go run -help
 #       Specify a user age (default 42)
 # -u string
 #       Specify a user name (default "No One")
+# Build your application and publish it to $GOBIN
+go install
+# In a separate terminal run your new application
+hello -u Fred -a 10
 ```
 
 ---
