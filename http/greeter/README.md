@@ -19,7 +19,8 @@
   * You should issue a JSON response!
 * Make sure the proper JSON headers are set
 * Write the necessary tests to shake out your endpoints!
-* Run your web service using cmd/greet_svc.go
+* Run your web service using cmd/svc/main.go
+* Now run your cli to call your web service cmd/cli/main.go
 * [BONUS] Hit a classmate greeting service if you share the same network
 
 ## Expected Output
