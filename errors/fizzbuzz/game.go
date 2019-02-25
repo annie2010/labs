@@ -22,7 +22,7 @@ func main() {
 	for i := 0; i <= 21; i++ {
 		fmt.Printf("%02d ", i)
 		if r, err := play(i); err != nil {
-			fmt.Printf("Err %+s\n", err)
+			fmt.Printf("Err %+v\n", err)
 		} else {
 			fmt.Printf("%v\n", r)
 		}
