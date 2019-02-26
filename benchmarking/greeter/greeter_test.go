@@ -20,6 +20,10 @@ func TestGreeter3(t *testing.T) {
 	assert.Equal(t, "Hello, Fernand! You are 42 old today...", greeter3("Fernand", 42))
 }
 
+func TestGreeter4(t *testing.T) {
+	assert.Equal(t, "Hello, Fernand! You are 42 old today...", greeter4("Fernand", 42))
+}
+
 func BenchmarkGreeter1(b *testing.B) {
 	n, a := "Fernand", 30
 	b.ResetTimer()
@@ -41,5 +45,13 @@ func BenchmarkGreeter3(b *testing.B) {
 	b.ResetTimer()
 	for i := 0; i < b.N; i++ {
 		greeter3(n, a)
+	}
+}
+
+func BenchmarkGreeter4(b *testing.B) {
+	n, a := "Fernand", 30
+	b.ResetTimer()
+	for i := 0; i < b.N; i++ {
+		greeter4(n, a)
 	}
 }

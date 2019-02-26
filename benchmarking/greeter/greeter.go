@@ -19,14 +19,21 @@ func greeter2(n string, a int) string {
 
 func greeter3(n string, a int) string {
 	var b strings.Builder
-
 	b.Grow(39)
-	// fmt.Fprintf(&b, "Hello, "+n+"! You are "+strconv.Itoa(a)+" old today...")
 	b.WriteString("Hello, ")
 	b.WriteString(n)
 	b.WriteString("! You are ")
 	b.WriteString(strconv.Itoa(a))
 	b.WriteString(" old today...")
-
 	return b.String()
+}
+
+func greeter4(n string, a int) string {
+	b := make([]byte, 0, 39)
+	b = append(b, "Hello, "...)
+	b = append(b, n...)
+	b = append(b, "! You are "...)
+	b = append(b, strconv.Itoa(a)...)
+	b = append(b, " old today..."...)
+	return string(b)
 }
