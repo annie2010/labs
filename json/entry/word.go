@@ -1,4 +1,4 @@
-// © 2018 Imhotep Software LLC. All rights reserved.
+// © 2019 Imhotep Software LLC. All rights reserved.
 
 // Package entry provides for JSON encoding/decoding of a dictionary entry.
 package entry
