@@ -10,10 +10,10 @@ import (
 
 const raw = `{"dictionary":"artists","location":"/tmp/assets","random_word":"bumblebeetuna"}`
 
-func TestDicMarshal(t *testing.T) {
+func TestWordMarshal(t *testing.T) {
 	e := entry.Word{
 		Dictionary: "artists",
-		Location:   "dictionary1",
+		Location:   "/tmp/assets",
 		Word:       "bumblebeetuna",
 	}
 	bb, err := json.Marshal(e)
@@ -22,18 +22,12 @@ func TestDicMarshal(t *testing.T) {
 	assert.Equal(t, string(raw), string(bb))
 }
 
-// func TestDicUnmarshal(t *testing.T) {
-// 	var e entry.Word
-// 	err := json.Unmarshal([]byte(raw), &e)
+func TestWordUnmarshal(t *testing.T) {
+	var e entry.Word
+	err := json.Unmarshal([]byte(raw), &e)
 
-// 	assert.Nil(t, err)
-// 	assert.Equal(t, "artists", e.Dictionary)
-// 	assert.Equal(t, "/tmp/assets", e.Location)
-// 	assert.Equal(t, "bumblebeetuna", e.Word)
-// }
-
-// func TestDicUnmarshallFail(t *testing.T) {
-// 	var e entry.Word
-// 	err := json.Unmarshal([]byte("fred"), &e)
-// 	assert.NotNil(t, err)
-// }
+	assert.Nil(t, err)
+	assert.Equal(t, "artists", e.Dictionary)
+	assert.Equal(t, "/tmp/assets", e.Location)
+	assert.Equal(t, "bumblebeetuna", e.Word)
+}
