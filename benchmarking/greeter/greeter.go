@@ -19,7 +19,6 @@ func greeter2(n string, a int) string {
 
 func greeter3(n string, a int) string {
 	var b strings.Builder
-	b.Grow(39)
 	b.WriteString("Hello, ")
 	b.WriteString(n)
 	b.WriteString("! You are ")
