@@ -4,7 +4,7 @@
 <br/>
 <br/>
 
-# GopherLand! Labs
+# GopherLand Training Labs
 
 [![Go Report Card](https://goreportcard.com/badge/github.com/gopherland/labs)](https://goreportcard.com/report/github.com/gopherland/labs)
 
