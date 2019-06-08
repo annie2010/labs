@@ -1,6 +1,7 @@
 package entry_test
 
 import (
+	"encoding/json"
 	"testing"
 
 	"github.com/gopherland/labs/json/entry"
@@ -9,30 +10,30 @@ import (
 
 const raw = `{"dictionary":"artists","location":"/tmp/assets","random_word":"bumblebeetuna"}`
 
-func TestToJSON(t *testing.T) {
+func TestDicMarshal(t *testing.T) {
 	e := entry.Word{
 		Dictionary: "artists",
-		Location:   "/tmp/assets",
+		Location:   "dictionary1",
 		Word:       "bumblebeetuna",
 	}
-	bb, err := e.ToJSON()
+	bb, err := json.Marshal(e)
 
 	assert.Nil(t, err)
 	assert.Equal(t, string(raw), string(bb))
 }
 
-func TestFromJSON(t *testing.T) {
-	var e entry.Word
-	err := e.FromJSON([]byte(raw))
+// func TestDicUnmarshal(t *testing.T) {
+// 	var e entry.Word
+// 	err := json.Unmarshal([]byte(raw), &e)
 
-	assert.Nil(t, err)
-	assert.Equal(t, "artists", e.Dictionary)
-	assert.Equal(t, "/tmp/assets", e.Location)
-	assert.Equal(t, "bumblebeetuna", e.Word)
-}
+// 	assert.Nil(t, err)
+// 	assert.Equal(t, "artists", e.Dictionary)
+// 	assert.Equal(t, "/tmp/assets", e.Location)
+// 	assert.Equal(t, "bumblebeetuna", e.Word)
+// }
 
-func TestFromJSONFail(t *testing.T) {
-	var e entry.Word
-	err := e.FromJSON([]byte("fred"))
-	assert.NotNil(t, err)
-}
+// func TestDicUnmarshallFail(t *testing.T) {
+// 	var e entry.Word
+// 	err := json.Unmarshal([]byte("fred"), &e)
+// 	assert.NotNil(t, err)
+// }
