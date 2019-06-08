@@ -8,20 +8,22 @@ import (
 
 var Output string
 
+const expected = "Hello, Fernand! You are 42 old today..."
+
 func TestGreeter1(t *testing.T) {
-	assert.Equal(t, "Hello, Fernand! You are 42 old today...", greeter1("Fernand", 42))
+	assert.Equal(t, expected, greeter1("Fernand", 42))
 }
 
 func TestGreeter2(t *testing.T) {
-	assert.Equal(t, "Hello, Fernand! You are 42 old today...", greeter2("Fernand", 42))
+	assert.Equal(t, expected, greeter2("Fernand", 42))
 }
 
 func TestGreeter3(t *testing.T) {
-	assert.Equal(t, "Hello, Fernand! You are 42 old today...", greeter3("Fernand", 42))
+	assert.Equal(t, expected, greeter3("Fernand", 42))
 }
 
 func TestGreeter4(t *testing.T) {
-	assert.Equal(t, "Hello, Fernand! You are 42 old today...", greeter4("Fernand", 42))
+	assert.Equal(t, expected, greeter4("Fernand", 42))
 }
 
 func BenchmarkGreeter1(b *testing.B) {
