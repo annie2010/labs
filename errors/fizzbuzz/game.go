@@ -13,43 +13,44 @@ const (
 	div3And5 = div3 + div5
 )
 
-var (
-	errUnderRange = errors.New("number is under range (<=0)")
-	errOverRange  = errors.New("number is over range (> 20)")
+// Error represents an error.
+type Error string
+
+// Error returns an error message.
+func (e Error) Error() string {
+	return string(e)
+}
+
+const (
+	// ErrUnderRange represents an out of range error.
+	ErrUnderRange = Error("number is under range (<=0)")
+	// ErrOverRange represents an over range error.
+	ErrOverRange = Error("number is over range (> 20)")
 )
 
 func main() {
 	for i := 0; i <= 21; i++ {
-		fmt.Printf("%02d ", i)
 		if r, err := play(i); err != nil {
 			fmt.Printf("Err %+v\n", err)
 		} else {
-			fmt.Printf("%v\n", r)
+			fmt.Printf("%02d %v\n", i, r)
 		}
 	}
 }
 
 func play(n int) (string, error) {
-	var s string
-
-	if n <= 0 {
-		return s, errors.Wrapf(errUnderRange, "FizzBuzz with %d", n)
-	}
-
-	if n > 20 {
-		return s, errors.Wrapf(errOverRange, "FizzBuzz with %d", n)
-	}
-
 	switch {
+	case n <= 0:
+		return "", errors.Wrapf(ErrUnderRange, "FizzBuzz with %d", n)
+	case n > 20:
+		return "", errors.Wrapf(ErrOverRange, "FizzBuzz with %d", n)
 	case n%3 == 0 && n%5 == 0:
-		s = div3And5
+		return div3And5, nil
 	case n%3 == 0:
-		s = div3
+		return div3, nil
 	case n%5 == 0:
-		s = div5
+		return div5, nil
 	default:
-		s = strconv.Itoa(n)
+		return strconv.Itoa(n), nil
 	}
-
-	return s, nil
 }
