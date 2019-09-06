@@ -15,7 +15,7 @@
   * dictionary: the name of the dictionary
   * location: the path where the dictionary was loaded from
   * word: a random word
-* Define a FromJSON/ToJSON to encode/decode a word to JSON.
+* Implement a custom JSON encoder/decoder on the Word type.
 * Be sure to write tests for your methods!
 
 ---
