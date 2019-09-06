@@ -20,6 +20,9 @@ type (
 	aWord Word
 )
 
+// Add compiler check to ensure our word is marshallable.
+var _ json.Marshaler = &Word{}
+
 // MarshalJSON converts entry into raw json
 func (w *Word) MarshalJSON() ([]byte, error) {
 	return json.Marshal(aWord(*w))
