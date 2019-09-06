@@ -3,19 +3,14 @@
 // Package entry provides for JSON encoding/decoding of a dictionary entry.
 package entry
 
-// Entry from a dictionary load.
+import (
+	"encoding/json"
+)
+
+// Word reprsents a dictionary word.
 type Word struct {
 	// YOUR CODE...
 }
 
-// ToJSON converts entry into raw json.
-func (w *Word) ToJSON() ([]byte, error) {
-	// YOUR CODE...
-	return []byte{}, nil
-}
-
-// FromJSON hydrates an entry from raw json.
-func (w *Word) FromJSON(bb []byte) error {
-	// YOUR CODE...
-	return nil
-}
+// Make compiler check our marshaller interface is implemented.
+var _ json.Marshaler = &Word{}

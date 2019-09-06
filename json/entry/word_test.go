@@ -2,18 +2,16 @@ package entry_test
 
 import (
 	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 const raw = `{"dictionary":"artists","location":"/tmp/assets","random_word":"bumblebeetuna"}`
 
-func TestToJSON(t *testing.T) {
-	// YOUR CODE...
+func TestWordMarshal(t *testing.T) {
+	assert.True(t, false)
 }
 
-func TestFromJSON(t *testing.T) {
-	// YOUR CODE...
-}
-
-func TestFromJSONFail(t *testing.T) {
-	// YOUR CODE...
+func TestWordUnmarshal(t *testing.T) {
+	assert.True(t, false)
 }
