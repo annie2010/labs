@@ -35,23 +35,30 @@ func BenchmarkCompute(b *testing.B) {
 	Output = out
 }
 
-// Returns `FizzBuzz if number is div by 3 and 5
+// Returns `FizzBuzz if number is div by 3 and 5.
 func ExampleCompute_DivisibleBy3And5() {
 	fmt.Println(fizzbuzz.Compute(15))
 	// Output:
 	// FizzBuzz
 }
 
-// Returns `Fizz if number is div by 3
+// Returns `Fizz if number is div by 3.
 func ExampleCompute_DivisibleBy3() {
 	fmt.Println(fizzbuzz.Compute(3))
 	// Output:
 	// Fizz
 }
 
-// Returns `Buzz if number is div by 5
+// Returns `Buzz if number is div by 5.
 func ExampleCompute_DivisibleBy5() {
 	fmt.Println(fizzbuzz.Compute(5))
 	// Output:
 	// Buzz
+}
+
+// Returns number if not a Fizzbuzz number.
+func ExampleCompute_NotFizzBuzz() {
+	fmt.Println(fizzbuzz.Compute(2))
+	// Output:
+	// 2
 }
