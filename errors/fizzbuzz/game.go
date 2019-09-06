@@ -1,10 +1,9 @@
 package main
 
 import (
+	"errors"
 	"fmt"
 	"strconv"
-
-	"github.com/pkg/errors"
 )
 
 const (
@@ -13,37 +12,47 @@ const (
 	div3And5 = div3 + div5
 )
 
-// Error represents an error.
-type Error string
+type (
+	// ErrUnderRange represents a number under range error.
+	ErrUnderRange struct{}
+	// ErrOverRange represents a number over range error.
+	ErrOverRange struct{}
+)
 
-// Error returns an error message.
-func (e Error) Error() string {
-	return string(e)
+func (e ErrUnderRange) Error() string {
+	return "number is under range (<=0)"
 }
 
-const (
-	// ErrUnderRange represents an out of range error.
-	ErrUnderRange = Error("number is under range (<=0)")
-	// ErrOverRange represents an over range error.
-	ErrOverRange = Error("number is over range (> 20)")
-)
+func (e ErrOverRange) Error() string {
+	return "number is over range (>20)"
+}
 
 func main() {
 	for i := 0; i <= 21; i++ {
-		if r, err := play(i); err != nil {
-			fmt.Printf("Err %+v\n", err)
-		} else {
+		r, err := play(i)
+		if err == nil {
 			fmt.Printf("%02d %v\n", i, r)
+			continue
 		}
+
+		// Check err under range if so print unwrapped error
+		var e ErrUnderRange
+		if errors.As(err, &e) {
+			fmt.Printf("Boom!! %s\n", e)
+			continue
+		}
+
+		// Otherwise print wrapped error
+		fmt.Println("Bam!!", err)
 	}
 }
 
 func play(n int) (string, error) {
 	switch {
 	case n <= 0:
-		return "", errors.Wrapf(ErrUnderRange, "FizzBuzz with %d", n)
+		return "", fmt.Errorf("Invalid FizzBuzz# (%d) -- %w", n, ErrUnderRange{})
 	case n > 20:
-		return "", errors.Wrapf(ErrOverRange, "FizzBuzz with %d", n)
+		return "", fmt.Errorf("Invalid FizzBuzz# (%d) -- %w", n, ErrOverRange{})
 	case n%3 == 0 && n%5 == 0:
 		return div3And5, nil
 	case n%3 == 0:
