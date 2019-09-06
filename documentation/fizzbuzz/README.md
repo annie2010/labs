@@ -20,6 +20,7 @@
 * In your test make sure you use the fizzbuzz_test package as you will need to
   export your compute function.
 * Add example documentation and example tests!
+* BONUS! Verify the test suite fails if an example test is not returning an expected number.
 
 ### Checklist
 
@@ -36,7 +37,7 @@ go test
 # Checkout coverage
 go test -coverprofile cov.out && go tool cover -func cov.out
 # Check you're going fast!
-go test -v --run xxx -bench Fizz --benchmem
+go test -run xxx -bench Compute -benchmem
 # Checkout your package documentation
 go doc fizzbuzz compute
 ```
