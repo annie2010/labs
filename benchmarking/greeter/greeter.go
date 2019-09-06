@@ -1,5 +1,6 @@
-// Greeter computes a greeting message
+// © 2019 Imhotep Software LLC. All rights reserved.
 
+// Package greeter computes a greeting message
 package greeter
 
 import (
@@ -10,6 +11,7 @@ import (
 
 func greeter1(n string, a int) string {
 	const format = "Hello, %s! You are %d old today..."
+
 	return fmt.Sprintf(format, n, a)
 }
 
@@ -24,6 +26,7 @@ func greeter3(n string, a int) string {
 	b.WriteString("! You are ")
 	b.WriteString(strconv.Itoa(a))
 	b.WriteString(" old today...")
+
 	return b.String()
 }
 
@@ -34,5 +37,6 @@ func greeter4(n string, a int) string {
 	b = append(b, "! You are "...)
 	b = append(b, strconv.Itoa(a)...)
 	b = append(b, " old today..."...)
+
 	return string(b)
 }

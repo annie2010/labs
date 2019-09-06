@@ -30,7 +30,7 @@ go test
 1. Run Benchmarks
 
 ```shell
-go test --bench Greet --benchmem --benchtime=3s
+go test --run - --bench Greet --benchmem --benchtime=3s
 ```
 
 ---
