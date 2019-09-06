@@ -15,7 +15,7 @@
   * dictionary: the name of the dictionary
   * location: the path where the dictionary was loaded from
   * word: a random word
-* Define the necessary methods to ensure your word struct is a json.Marshaller.
+* Define the necessary methods to ensure your word struct is a json.Marshaler.
 * Be sure to write tests for your methods!
 
 ---
