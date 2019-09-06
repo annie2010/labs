@@ -1,6 +1,7 @@
 package picker_test
 
 import (
+	"fmt"
 	"testing"
 
 	"github.com/derailed/picker"
@@ -30,4 +31,10 @@ func TestLoadMissing(t *testing.T) {
 func TestLoadCustomFail(t *testing.T) {
 	_, err := picker.Load("zorg", "actors")
 	assert.EqualError(t, err, "unable to load dictionary `zorg/actors.txt")
+}
+
+func ExamplePick() {
+	fmt.Println(picker.Pick(picker.WordList{"fred"}))
+	// Output:
+	// fred
 }

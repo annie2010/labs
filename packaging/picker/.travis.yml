@@ -1,7 +1,7 @@
 language: go
 go_import_path: github.com/derailed/picker
 go:
-  - 1.11
+  - "1.13"
   - master
 
 os:
@@ -12,6 +12,10 @@ dist: trusty
 sudo: false
 install: true
 
+env:
+  - GO111MODULE=on
+  - GOPROXY="https://proxy.golang.org,direct"
+
 script:
-  - env GO111MODULE=on go build
-  - env GO111MODULE=on go test
+  - go build
+  - go test

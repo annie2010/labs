@@ -18,42 +18,52 @@
 * The picker package loads words from the given assets directory and randomly pick a new word
 * Copy gopherland/labs/packaging/picker to your $HOME/gopherland/picker
 * Create a new module file using the following command:
-  ```shell
-  go mod init github.com/YOUR_GIT_USER_HANDLE/picker
-  ```
+
+    ```shell
+    go mod init github.com/YOUR_GIT_USER_HANDLE/picker
+    ```
+
 * Update the test import path to the picker to reflect your own git user handle
 * Run the test command to make sure the tests are still passing and coverage is good!
 * Ensure all exported items have the correct documentation
 * Using your own github account, create a new public repo named **picker**
 * Setup your git repo using:
-  ```shell
-  git init
-  git add .
-  git commit -m 'Init drop'
-  git remote add origin git@github.com:YOUR_GIT_USER_HANDLE/picker.git
-  git push --set-upstream origin master
-  ```
+
+    ```shell
+    git init
+    git add .
+    git commit -m 'Init drop'
+    git remote add origin git@github.com:YOUR_GIT_USER_HANDLE/picker.git
+    git push --set-upstream origin master
+    ```
+
 * Using semantic versioning tag your release
-  ```shell
-  git tags v1.0.0
-  git push --tags
-  ```
+
+    ```shell
+    git tags v1.0.0
+    git push --tags
+    ```
+
 * In cmd/main.go update the import path to use your new repo
 * In the root of your repo run your cli app
-  ```shell
-  go run cmd/main.go
-  go run cmd/main.go -dic musicians -dir assets
-  # Clean up your dependencies
-  go mod tidy
-  ```
+
+    ```shell
+    go run cmd/main.go
+    go run cmd/main.go -dic musicians -dir assets
+    # Clean up your dependencies
+    go mod tidy
+    ```
+
 * Checkout your docs and score card!
+
   ```shell
   open https://godoc.org/github.com/YOUR_GIT_USER_HANDLE/picker
   open https://goreportcard.com/report/github.com/YOUR_GIT_USER_HANDLE/picker
   ```
+
 * Update the README.md badge section with your own github handle
 * Congratulation!! You've just built and published your very own go package!
-*
+
 * [BONUS] Change your CLI to reference your classmate repo and run the CLI using
   their implementation!!
 * [BONUS] Use [Travis CI](https://travis-ci.org), add your repo and earn an extra badge!
