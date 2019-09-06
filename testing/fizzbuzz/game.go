@@ -9,7 +9,7 @@ const (
 	divBy3And5 = divBy3 + divBy5
 )
 
-// compute returns a FizzBuzz number based on given inputs.
+// Compute returns a FizzBuzz number based on a given input.
 // Returns...
 // `FizzBuzz if number div by 3 and 5.
 // `Fizz if div by 3.
