@@ -38,3 +38,8 @@ func ExampleCompute_DivisibleBy3() {
 func ExampleCompute_DivisibleBy5() {
 	// YOUR_CODE
 }
+
+// YOUR_CODE
+func ExampleCompute_NoFizzBuzz() {
+	// YOUR_CODE
+}
