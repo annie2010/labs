@@ -60,5 +60,5 @@ func ExampleCompute_DivisibleBy5() {
 func ExampleCompute_NotFizzBuzz() {
 	fmt.Println(fizzbuzz.Compute(2))
 	// Output:
-	// 2
+	// 10
 }
