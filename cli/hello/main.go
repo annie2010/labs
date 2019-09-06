@@ -11,5 +11,5 @@ func greet(name string, age int) string {
 func main() {
 	// YOUR_CODE...
 
-	fmt.Println(greet("Blee", 10))
+	fmt.Println("Get cracking already!")
 }
