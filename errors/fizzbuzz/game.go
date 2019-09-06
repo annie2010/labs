@@ -11,8 +11,7 @@ const (
 	div3And5 = div3 + div5
 )
 
-// YOUR CODE define your sentinel errors
-var ()
+// YOUR CODE define your errors
 
 func main() {
 	for i := 0; i <= 21; i++ {
@@ -22,6 +21,7 @@ func main() {
 		} else {
 			fmt.Printf("%v\n", r)
 		}
+		// YOUR CODE check returned error types and print accordingly.
 	}
 }
 
